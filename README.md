@@ -1,5 +1,6 @@
 # LoveU
 Página web para San Valentin dedicada a una persona especial.
 
-Ejemplo:
+Pruebala en:
+
 https://iloveyoudanlest.netlify.app/
