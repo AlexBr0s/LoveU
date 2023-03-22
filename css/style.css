@@ -1,0 +1,158 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.fondo {
+    background-color: azure;
+}
+
+.btn-redondo {
+    border-radius: 100%;
+}
+
+
+:root {
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    :root {
+        font-size: 1.125rem;
+    }
+
+    .corazon{
+        font-size: 31vw;
+    }
+}
+
+@media (min-width: 900px) {
+    :root {
+        font-size: 1.5rem;
+    }
+
+    .corazon{
+        font-size: 31vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 1.75rem;
+    }
+    
+    .corazon{
+        font-size: 31vw;
+    }
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.messages {
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.bubble {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 0 1rem 0;
+    padding: .5rem .85rem;
+    line-height: 1.25rem;
+    border-radius: 1.25rem;
+    transform-origin: 0 100%;
+    vertical-align: middle;
+    transition: border-radius .25s ease-out .075s;
+}
+
+.bubble.left.cornered {
+    border-bottom-left-radius: 0;
+}
+
+.bubble.left {
+    background: rgba(206, 206, 206, 0.50);
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -.5rem;
+    width: .5rem;
+    height: .5rem;
+    background-image: url(../img/corner.svg);
+    background-size: .5rem .5rem;
+    background-position: .5rem 0;
+    background-repeat: no-repeat;
+    transition: background-position .15s ease-in;
+}
+
+.bubble.cornered:after {
+    background-position: 0 0;
+}
+
+.bubble span {
+    display: block;
+}
+
+.bubble span.message {
+    opacity: 0;
+}
+
+.bubble a {
+    color: #0076FF;
+}
+
+.bubble .loading {
+    position: absolute;
+    width: 2.25rem;
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+.bubble .loading b {
+    display: inline-block;
+    color: rgba(0, 0, 0, .5);
+}
+
+
+
+.corazon{
+    color: crimson;
+    animation: 3s ease infinite cora;
+    font-size: 31vw;
+    text-shadow: 4px 4px 25px rgba(255, 0, 0, .6);
+}
+
+.corazon .adentro-corazon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-align: center; 
+}
+
+@keyframes cora {
+    50%{
+        transform: scale(1.3);
+    }
+}
+
+
+
